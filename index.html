@@ -21,7 +21,7 @@
     function getTelegramData(){
         const telegram = window.Telegram.WebApp;
         if (telegram) {
-            document.getElementById('user').innerText = telegram.initDataUnsafe.user.username;
+            document.getElementById('user').innerText = telegram.initDataUnsafe.user.name;
         } else {
             document.getElementById('user').innerText = 'User';
         }
